@@ -1,0 +1,80 @@
+body {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-image: url(/static/pics/1000143.jpg);
+    background-position: initial;
+    background-position-y: -110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.container {
+    width: 400px;
+    margin: 10% auto;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px #333;
+    
+}
+
+.header {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.header h1 {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 80px;
+}
+
+.form-register {
+    text-align: center;
+}
+
+.form-register .input #button{
+    width: 280px;
+    height: 30px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.form-register #button {
+    width: 80px;
+    height: 30px;
+    padding-left: auto;
+    background-color: rgb(23, 167, 192);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-register .user {
+    position: relative;
+}
+
+.form-register i {
+    position: absolute;
+    top: 8px;
+    left: 75px;
+    font-weight: bolder;
+}
+
+#forgot {
+    position: relative;
+    right: 65px;
+}
+
+.form-register #button:hover {
+    box-shadow: 2px 2px 5px #555;
+    background-color: rgb(6, 156, 194);
+}
+
+.form-register .input:hover {
+    box-shadow: 2px 2px 5px #555;
+    background-color: rgb(226, 227, 229);
+}

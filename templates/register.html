@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/register_style.css">
+    <title>Register</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul style="color: red;">
+                {% for message in messages %}
+                    <li>{{message}}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <div class="container">
+        <div class="header">
+            <h1>Register</h1>
+        </div>
+        <div class="form-register">
+            <form action="/register" method="POST" class="form-login">
+                <div class="user">
+                    <i class="icon-user"></i>
+                    <input class="input" type="text" name="username" placeholder="Username">
+                </div>
+                <div class="user">
+                    <i class="icon-lock"></i>
+                    <input class="input" type="password" name="password" placeholder="Password">
+                </div>
+                <div class="user">
+                    <i class="icon-lock"></i>
+                    <input class="input" type="password" name="password_confirm" placeholder="Comfirm Password">
+                </div>
+                <input id="button" type="submit" value="Sign up">
+                <span id="login">
+                    <p>Already have an account? <a href="/login">Login</a></p>
+                </span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
